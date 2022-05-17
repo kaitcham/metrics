@@ -36,12 +36,16 @@ function Home() {
           <img src="../images/world.png" alt="world" style={{ width: '50%' }} />
           <div className={style.info}>
             <h3>World</h3>
-            <h4>{`NEW CASES: ${numberWithCommas(
-              sumFieldOfArray(continents, 'todayCases')
-            )} `}</h4>
-            <h4>{`NEW DEATHS: ${numberWithCommas(
-              sumFieldOfArray(continents, 'todayDeaths')
-            )} `}</h4>
+            <h4>
+              {`NEW CASES: ${numberWithCommas(
+                sumFieldOfArray(continents, 'todayCases'),
+              )} `}
+            </h4>
+            <h4>
+              {`NEW DEATHS: ${numberWithCommas(
+                sumFieldOfArray(continents, 'todayDeaths'),
+              )} `}
+            </h4>
           </div>
         </div>
         {continents.map((el) => (
