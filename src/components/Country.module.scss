@@ -1,0 +1,66 @@
+$pink : #ec4c8a;
+$morepink : #d04378;
+$blue : #4369b2;
+$moreblue : #4369b2;
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  .card {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: row;
+    position: relative;
+    background-color: $pink;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: baseline;
+
+    h3 {
+      font-family: 'Gill Sans', sans-serif;
+      font-size: 4vw;
+      font-weight: bold;
+      margin: 15px;
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      font-family: 'Gill Sans', sans-serif;
+      font-size: 3vw;
+      margin: 0;
+      margin-bottom: 10px;
+      color: white;
+      padding-left: 15px;
+      font-weight: normal;
+    }
+
+    span {
+      font-family: 'Lato', sans-serif;
+      font-size: 4vw;
+      margin: 0;
+      text-align: right;
+      color: white;
+      font-weight: normal;
+      padding-right: 20px;
+    }
+
+    h4:nth-child(3) {
+      margin-bottom: 2vw;
+    }
+  }
+
+  .card:nth-child(1) {
+    align-items: center;
+  }
+
+  .card:nth-child(4n+3) {
+    background-color: $morepink;
+  }
+
+  .card:nth-child(4n+4) {
+    background-color: $morepink;
+  }
+}
