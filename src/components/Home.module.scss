@@ -1,0 +1,23 @@
+.wallpaper {
+  width: 100%;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+
+    img {
+      width: 100%;
+    }
+
+    .info {
+      width: 50%;
+      font-family: Helvetica, sans-serif;
+    }
+  }
+}
