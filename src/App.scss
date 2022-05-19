@@ -1,4 +1,18 @@
+$pink : #ec4c8a;
+$blue : #4369b2;
+
 body {
   margin: 0;
   padding: 0;
+  background-color: $pink;
+}
+
+@font-face {
+  font-family: 'Gill Sans';
+  src: url('../public/fonts/Gill\ Sans.otf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../public/fonts/Lato.ttf');
 }
